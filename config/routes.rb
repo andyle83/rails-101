@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   # Adding root
   root 'articles#index'
 
-  get '/articles', to: 'articles#index'
-  get '/articles/:id', to: 'articles#show'
+  # get '/articles', to: 'articles#index'
+  # get '/articles/:id', to: 'articles#show'
+  resources :articles
 end
